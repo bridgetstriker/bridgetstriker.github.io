@@ -1,0 +1,77 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+header {
+    align-items: baseline;
+    clear: both;
+}
+header p {
+    margin-top: -0.5rem;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Kavivanar', cursive;
+    font-weight: normal;
+}
+h1 {
+    font-size: 3rem;
+    color: #A51F10;
+    margin: 0;;
+}
+h2 {
+    font-size: 2rem;
+    color: #A51F10;
+    margin: 0;
+}
+a {
+    color: #DA0090;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    list-style-type: none;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+}
+ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    list-style-type: none;
+}
+img {
+    float: left;
+    margin-right: 10px;
+}
+article {
+    margin-top: 20px;
+    margin-bottom: 75px;
+    clear: both;
+    max-width: 1000px;
+}
+article img {
+    border-radius: 25px;
+}
+.posted {
+    font-size: 0.8rem;
+    color: #89A611;
+}
+section {
+    border-bottom: 1px solid #da0090;
+    margin-bottom: 0.3rem;
+}
+footer {
+    text-align: center;
+    font-size: 0.8rem;
+    border-top: 1px solid #a61f11;
+}
