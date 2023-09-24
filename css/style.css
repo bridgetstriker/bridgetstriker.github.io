@@ -60,3 +60,7 @@ hr {
     float: left;
     padding: 10px;
 }
+.headings {
+    float: left;
+    clear: both;
+}
