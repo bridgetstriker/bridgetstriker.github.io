@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+body {
+background-image: url(../images/drybrush-lightgray.jpg);
+background-repeat: repeat;   
+}
+
 .gallery-img {
     display: none;
     max-height: 600px;
