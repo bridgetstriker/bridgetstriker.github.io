@@ -1,12 +1,38 @@
 * {
     box-sizing: border-box;
 }
-
 body {
-background-image: url(../images/drybrush-lightgray.jpg);
-background-repeat: repeat;   
+    background-image: (url(../drybrush-lightgray.jpg));
+    background-repeat: repeat;
+    padding: 0;
+    margin: 0;
+}
+.main-nav {
+    background-color: black;
+    color: white;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+    position: relative;
+    z-index: 5;
 }
 
+.brand {
+    margin: 0;
+    font-size: 50px;
+    cursor: grab;
+    cursor: -webkit-grab;
+    z-index: 10;
+    background-color: white;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    border: 1px solid ß#777;
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
 .gallery-img {
     display: none;
     max-height: 600px;
@@ -47,4 +73,10 @@ background-repeat: repeat;
 .btn:disabled {
     background-color: #666;
     cursor: not-allowed;
+}
+.swiper-slide {
+    text-align: center;
+}
+img {
+    height: 600px;
 }
