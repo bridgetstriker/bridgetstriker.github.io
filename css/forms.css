@@ -10,13 +10,16 @@ body {
 	padding: 0;
 	background-image: url(../images/looks_like_Jupiter.jpg);
 }
+a:hover {
+	color: red;
+}
 .wrapper {
 	width: 80%;
 	margin: 0 auto;
 	padding: 1em;
 	display: flex;
 	flex-flow: row nowrap;
-	background-color: #699CCB;
+	background-color: #40E0D0;
 }
 section {
 	flex-basis: 57%;
