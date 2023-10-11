@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    background-color: green;
+    color: #fff;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    margin: 0;
+    list-style: none;
+}
+.main-image {
+    display: none;
+}
+
+.loading-dog {
+    display: none;
+}
+.dog-img {
+    display: none;
+}
+.show {
+    display: block;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    overflow: hidden;
+}
+
+.main-image {
+    max-width: 100%;
+    max-height: 80vh;
+}
+
+@keyframes spin {
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+@keyframes psychadelic {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+.mole {
+    height: 334px;
+    width: 334px;
+    background-color: brown;
+    border-radius: 50%;
+}
+.spinner {
+    font-size: 50px;
+    text-align: center;
+    animation: 2s spin linear infinite;
+    display: none;
+}
+.color {
+    animation: psychadelic 3s linear infinite;
+}
+
+.spin {
+    animation: spin 3s ease-in-out infinite;
+}
