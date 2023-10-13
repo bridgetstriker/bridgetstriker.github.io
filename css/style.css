@@ -10,11 +10,6 @@ body {
     justify-content: space-between;
 }
 
-a:hover {
-    color: red;
-    text-decoration: none;
-}
-
 .main {
     flex-direction: column;
     width: 75vw;
@@ -30,11 +25,12 @@ a:hover {
     background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(64, 224, 208, 1) 70%, rgba(0, 212, 255, 1) 100%);
     height: auto;
 }
-.sidebar a {
-    color: #8B0000;
+a {
+    color: #191970;
+    font-weight: bold;
 }
-.sidebar a:hover {
-    color: orange;
+a:hover {
+    color: white;
     text-decoration: none;
 }
 h1, h2, h3, p, ol, ul {
