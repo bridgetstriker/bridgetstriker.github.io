@@ -21,6 +21,16 @@ nav {
     margin: 0;
     list-style: none;
 }
+
+a {
+    color: #191970;
+    font-weight: bold;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+}
 .main-image {
     display: none;
 }
