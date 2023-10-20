@@ -106,6 +106,9 @@ a:hover {
     flex-direction: column-reverse;
 }
 .sidebar {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
     margin-left: 20px;
     padding: 50px 20px;
     width: 25vw;
