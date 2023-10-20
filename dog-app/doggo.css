@@ -41,6 +41,8 @@ a:hover {
     max-width: 40vw;
 }
 .loading-dog {
+    animation: spin 1s infinite linear;
+    font-size: 50px;
     display: none;
 }
 .dog-img {
