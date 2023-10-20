@@ -51,8 +51,8 @@ a:hover {
 }
 .container {
     display: flex;
-    align-items: left;
-    justify-content: left;
+    align-items: center;
+    justify-content: center;
     height: 80vh;
     overflow: hidden;
 }
