@@ -4,30 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doggies!</title>
-    <link rel="stylesheet" href="/css/blog.css">
+    <link rel="stylesheet" href="doggo.css">
 </head>
 <body>
 <nav>
     <h1>Dog Viewer</h1>
 </nav>
-    <div class="doggo"><img src="https://dog.ceo/api/breed/african/images/random" alt="doggo" class="dog-img show"></div>
+<div class="wrapper">
+    <div class="doggo"><img src="https://dog.ceo/api/breed/african/images/random" alt="doggo" class="dog-img show">
+        <form action="">
+            <select class="breed" id=""></select>
+        </form>
+    </div>
     <div class="spinner">🐶</div>
 
-
-    <select class="breed" id=""></select>
-
-    <div class="container">
-        <img class="main-image" id="main" src="" alt="">
-        <span id="loader" class="loading-dog show"></span>
-    </div>
-    <div class="mole">
-        <img src="https://frontendmasters.github.io/bootcamp/mole-game/mole-hungry.png"
-            style="background-color: brown; border-radius: 50%" class="mole color">
-        <img src="https://frontendmasters.github.io/bootcamp/mole-game/king-mole-hungry.png"
-            style="background-color: brown; border-radius: 50%" class="mole spin">
-    </div>
-    <div class="blather">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, fuga magni possimus maxime cupiditate illo doloremque minima cum vitae quod quia! Exercitationem impedit necessitatibus quaerat facere sed aperiam cum delectus, omnis velit, vero inventore accusamus, cupiditate fuga? Veritatis non corporis veniam reprehenderit illum culpa exercitationem harum aliquid at odio ducimus officiis ex, dignissimos numquam itaque sapiente sint incidunt laborum. Voluptatibus illum officiis omnis velit eos quos nobis, similique nam culpa tempore eum blanditiis ducimus quae ea? Asperiores totam fugiat dolor amet at! Esse quo nesciunt, rem ex est ipsum earum velit perspiciatis asperiores nulla ducimus eligendi amet veniam dolor reiciendis.
-    </div>
     <div class="sidebar">
         <p><a href="https://bridgetstriker.github.io/index.html">Home</a><br>
             <a href="hobbies.html">Hobbies</a><br>
@@ -46,7 +36,16 @@
             <a href="https://www.facebook.com/bridget.striker" target="_blank">Facebook</a>
         </p>
     </div>
+    
+    <div class="blather">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, fuga magni possimus maxime cupiditate illo doloremque minima cum vitae quod quia! Exercitationem impedit necessitatibus quaerat facere sed aperiam cum delectus, omnis velit, vero inventore accusamus, cupiditate fuga? Veritatis non corporis veniam reprehenderit illum culpa exercitationem harum aliquid at odio ducimus officiis ex, dignissimos numquam itaque sapiente sint incidunt laborum. Voluptatibus illum officiis omnis velit eos quos nobis, similique nam culpa tempore eum blanditiis ducimus quae ea? Asperiores totam fugiat dolor amet at! Esse quo nesciunt, rem ex est ipsum earum velit perspiciatis asperiores nulla ducimus eligendi amet veniam dolor reiciendis.
     </div>
-    <script src="js/doggo.js"></script>
+    <div class="mole">
+        <img src="https://frontendmasters.github.io/bootcamp/mole-game/mole-hungry.png"
+        style="background-color: brown; border-radius: 50%" class="mole color">
+        <img src="https://frontendmasters.github.io/bootcamp/mole-game/king-mole-hungry.png"
+            style="background-color: brown; border-radius: 50%" class="mole spin">
+    </div>
+</div>
 </body>
+<script src="doggo.js"></script>
 </html>
