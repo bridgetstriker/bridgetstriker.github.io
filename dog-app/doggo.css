@@ -114,6 +114,7 @@ a:hover {
 }
 
 .mole {
+    display: flex;
     flex-direction: row;
     flex-flow: row;
     height: 334px;
