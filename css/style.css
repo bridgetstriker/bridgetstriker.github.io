@@ -13,6 +13,8 @@ body {
 .main {
     flex-direction: column;
     width: 75vw;
+    padding: 10px;
+    margin: 0;
 }
 
 .sidebar {
