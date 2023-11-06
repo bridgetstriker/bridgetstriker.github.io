@@ -119,8 +119,8 @@ a:hover {
     margin-right: 25px;
     flex-direction: row;
     flex-flow: row;
-    height: 334px;
-    width: 334px;
+    height: 300px;
+    width: 300px;
     background-color: brown;
     border-radius: 50%;
     object-position: 50%;
