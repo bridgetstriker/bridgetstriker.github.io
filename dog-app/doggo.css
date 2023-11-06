@@ -90,7 +90,7 @@ a:hover {
     flex-direction: row;
     max-height: 200px;
     grid-column: 1;
-    grid-row: 3;
+    grid-row: 2;
 }
 @keyframes spin {
     to {
