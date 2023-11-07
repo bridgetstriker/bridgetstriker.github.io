@@ -30,16 +30,6 @@ function sendData() {
       "=" +
       encodeURIComponent(form.querySelector("[name='phone']").value)
   );
-  /* urlEncodedDataPairs.push(
-    encodeURIComponent("date") +
-      "=" +
-      encodeURIComponent(form.querySelector("[name='date']").value)
-  );
-  urlEncodedDataPairs.push(
-    encodeURIComponent("qty") +
-      "=" +
-      encodeURIComponent(form.querySelector("[name='qty']").value)
-  ); */
 
   // radio buttons
   let radio = document.getElementsByName("ufotype");
