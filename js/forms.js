@@ -30,7 +30,7 @@ function sendData() {
       "=" +
       encodeURIComponent(form.querySelector("[name='phone']").value)
   );
-  urlEncodedDataPairs.push(
+  /* urlEncodedDataPairs.push(
     encodeURIComponent("date") +
       "=" +
       encodeURIComponent(form.querySelector("[name='date']").value)
@@ -39,7 +39,7 @@ function sendData() {
     encodeURIComponent("qty") +
       "=" +
       encodeURIComponent(form.querySelector("[name='qty']").value)
-  );
+  ); */
 
   // radio buttons
   let radio = document.getElementsByName("ufotype");
