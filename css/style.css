@@ -28,11 +28,11 @@ body {
     height: auto;
 }
 a {
-    color: #191970;
+    color: #E0FFFF;
     font-weight: bold;
 }
 a:hover {
-    color: #E0FFFF;
+    color: #191970;
     text-decoration: none;
 }
 h1, h2, h3, p, ol, ul {
