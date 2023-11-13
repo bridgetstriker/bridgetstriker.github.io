@@ -44,9 +44,9 @@ a:hover {
     grid-row: 1/2;
 }
 .doggo img {
-    width: 400px;
+    /*width: 400px;
     height: 300px;
-    background: url(http://goo.gl/vyAs27) no-repeat scroll 0 0;
+    background: url(http://goo.gl/vyAs27) no-repeat scroll 0 0; */
     max-width: 40vw;
 }
 .breed {
