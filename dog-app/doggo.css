@@ -28,11 +28,11 @@ nav {
     grid-template-rows: 3fr 1fr;
 }
 a {
-    color: #191970;
+    color: #E0FFFF;
     font-weight: bold;
 }
 a:hover {
-    color: white;
+    color: #191970;
     text-decoration: none;
 }
 
