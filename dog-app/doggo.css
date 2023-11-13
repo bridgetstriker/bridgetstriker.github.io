@@ -28,7 +28,7 @@ nav {
     grid-template-rows: 3fr 1fr;
 }
 a {
-    color: #E0FFFF;
+    color: white;
     font-weight: bold;
 }
 a:hover {
@@ -44,7 +44,7 @@ a:hover {
     grid-row: 1/2;
 }
 .doggo img {
-    /*width: 400px;
+    /* width: 400px;
     height: 300px;
     background: url(http://goo.gl/vyAs27) no-repeat scroll 0 0; */
     max-width: 40vw;
