@@ -28,11 +28,11 @@ body {
     height: 1000px;
 }
 a {
-    color: white;
+    color: #191970;
     font-weight: bold;
 }
 a:hover {
-    color: #191970;
+    color: white;
     text-decoration: none;
 }
 h1, h2, h3, p, ol, ul {
