@@ -1,0 +1,84 @@
+/* Here are some possible starting values for fonts and colors. You may change them if you wish. The CodePen is linked to the specified Google fonts. If you change your font, you'll need to change the linked fonts as well. See the "Settings" button at the top right of the page to do this. */
+
+:root {
+    --creep: 'Creepster', cursive;
+    --regular-font: 'Source Sans Pro', sans-serif;
+    --red: #BF2C53;
+    --black: #00090D;
+    --ltgrey: #BFBFBF;
+    --dkgrey: #6E736F;
+    --yellow: #F2B90F;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+}
+header {
+    background-color: var(--black);
+}
+h1, h2, h3, dl, dt {
+    font-family: var(--creep);
+}
+h1 {
+    color: var(--red);
+}
+h2 {
+    background-color: var(--black);
+    color: var(--yellow);
+}
+nav a {
+    color: var(--ltgrey);
+}
+nav ul {
+    margin: 0;
+    padding: 2px;
+    list-style-type: none;
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+article, figure, dl {
+    max-width: 60vw;
+}
+img {
+    max-width: 100%;
+    padding: 10px  0 10px 0;
+}
+figure {
+    border: 1px solid red;
+    border-radius: 10px;
+    background-color: lemonchiffon;
+}
+figcaption {
+    max-width: 50vw;
+}
+dl {
+    font-size: 1.5rem;
+}
+dl, dt {
+    color: var(--red);
+    font-weight: bold;
+}
+blockquote, cite, dfn {
+    font-size: 1.2rem;
+}
+article:has(li:nth-child(4)) {
+    columns: 2;
+}
+address {
+    text-align: center;
+    color: var(--ltgrey);
+    background-color: var(--black);
+}
+footer {
+    padding-top: 3px;
+}

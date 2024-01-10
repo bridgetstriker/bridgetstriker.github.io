@@ -4,48 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kaiju Cafe</title>
-    <link rel="stylesheet" href="iceland.css">
+    <link rel="stylesheet" href="gamera.css">
 </head>
 <body>
     <!-- Mark up this page as semantically as possible. Do not worry about styling or interactivity. There are many "right" answers. Consider what you think is important to communicate and use markup accordingly. There are a few hints to point you to MDN pages for elements you might consider but we have not discussed. -->
-    
+<header>
     <h1>Kaiju Cafe</h1>
     <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
     </nav>
-    
+</header>    
+<figure>
     <img src="https://www.clker.com/cliparts/0/0/a/a/1498572164496646791godzilla-vs-gamera.hi.png" alt="A Power Ranger takes on Godzilla and Gamera."><br>
-    <caption>You won't find Gamera, Godzilla, or any Power Rangers at our café. Sorry!</caption>
+    <figcaption>You won't find Gamera, Godzilla, or any Power Rangers at our café -- though we may have reasonable facsimiles thereof, i.e. plushies.</figcaption>
+</figure>
+
     <h2>About the Cafe</h2>
-    
     <!-- hint: explore the <dfn> element: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dfn 
     you might also consider <figure> here: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure
     -->
-    <cite>
-        <dfn>Kaiju</dfn> (Citation: https://www.wordsense.eu/kaiju/)
+    <figure>
+        <dfn id="kaiju"><a href="https://www.wordsense.eu/kaiju/" target="_blank">Kaiju</a></dfn> (Citation: https://www.wordsense.eu/kaiju/)
         A giant monster, particularly such as those common to Japanese science fiction films, like Godzilla or Gamera.
-    </cite>
+        <figcaption><cite><a href="https://www.wordsense.eu/kaiju/" target="_blank">~From Wordsense</a></cite>
+    </figure>
     
-    <p>Kaiju Cafe was created in 1999 as a half-hatched plan that Erika Lee came up with while awaiting Y2K. She watched too many monster movies on Sunday afternoons. Later, she had a child obsessed with large creatures with sharp teeth, which was fitting.</p>
+    <article>
+        <p>Kaiju Cafe was created in 1999 as a half-hatched plan that Erika Lee came up with while awaiting Y2K. She watched too many monster movies on Sunday afternoons. Later, she had a child obsessed with large creatures with sharp teeth, which was fitting.</p>
+        
+        <p>The restaurant originally offered vegetarian and vegan food. However, many disappointed visitors expected meat to be on the menu. The internet offers mixed opinions about kaiju diets, but there seems to be some consensus that there’s a kaiju to eat just about anything. Therefore, burgers made it on the menu, in addition to big salads and Erika’s famous chocolate cake.</p>
+    </article>
     
-    <p>The restaurant originally offered vegetarian and vegan food. However, many disappointed visitors expected meat to be on the menu. The internet offers mixed opinions about kaiju diets, but there seems to be some consensus that there’s a kaiju to eat just about anything. Therefore, burgers made it on the menu, in addition to big salads and Erika’s famous chocolate cake.</p>
+    <dl>Hours</dl>
+        <dt>Monday</dt>
+        <dd>12-9</dd>
+        <dt>Tuesday</dt>
+        <dd>12-9</dd>
+        <dt>Wednesday</dt>
+        <dd>12-9</dd>
+        <dt>Thursday</dt>
+        <dd>12-9</dd>
+        <dt>Friday</dt>
+        <dd>12-11</dd>
+        <dt>Saturday</dt>
+        <dd>12-11</dd>
+        <dt>Sunday</dt>
+        <dd>Closed</dd>   
     
-    <dl>
-        <dt>Hours</dt>
-        <dd>Monday 12-9</dd>
-        <dd>Tuesday 12-9</dd>
-        <dd>Wednesday 12-9</dd>
-        <dd>Thursday 12-9</dd>
-        <dd>Friday 12-11</dd>
-        <dd>Saturday 12-11</dd>
-        <dd>Closed Sunday</dd>   
-    </dl>
-
-    <dl>
-       
-       <h3>Menu</h3> 
+    <dl>Menu</dl>
         <dt>Kaiju Burger $15</dt>
         <dd>The burger that put us on the map! Choose your patty, cheese, and up to 3 toppings.</dd>
         
@@ -64,35 +74,37 @@
         
         <dt>Curaçao Ice Cream $8</dt>
         <dd>Homemade, based on a 100-year old recipe, and made fresh in-house.</dd>
-    </dl>
+    
 
         <!-- hint: explore <figure> and <blockquote> for quotations: 
             https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure
     https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote -->
-    <blockquote>I'm not saying I don't enjoy the days that I'm not eating chocolate cake. But I do particularly like those days when I am eating chocolate cake.</blockquote>
-    <figcaption><a href="https://www.brainyquote.com/quotes/trisha_yearwood_799535"target="_blank">Trisha Yearwood</a></figcaption>
-    
-    <address>
-        Kaiju Cafe
-        1954 Shinagawa Ave
-        Los Angeles, CA 90027
-        +1 (310) 555-GOJI
-        kaiju@example.com
-        <a href="https://twitter.com/" target="_blank">Twitter</a>
-        <a href="https://www.facebook.com/" target="_blank">Facebook</a>
-    </address><br>
-    
-    <!-- hint: consider <small> https://developer.mozilla.org/en-US/docs/Web/HTML/Element/small -->
-    <footer>
-        <small>
-            Disclaimer: Kaiju Cafe is a completely fictional restaurant, but we wished it existed! It first appeared in
-            #30DaysOfHTML by Jen Kramer and Erika Lee in 2021.
-        </small>
-    </footer>
+    <figure>
+        <blockquote>I'm not saying I don't enjoy the days that I'm not eating chocolate cake. But I do particularly like those days when I am eating chocolate cake.
+        </blockquote>
+            <cite><a href="https://www.brainyquote.com/quotes/trisha_yearwood_799535"target="_blank">~Trisha Yearwood</a></cite>
+    </figure>
+        <!-- hint: consider <small> https://developer.mozilla.org/en-US/docs/Web/HTML/Element/small -->
+        <footer>
+            <small>
+                Disclaimer: Kaiju Cafe is a completely fictional restaurant, but we wished it existed! It first appeared in #30DaysOfHTML by Jen Kramer and Erika Lee in 2021.
+            </small>
+        </footer>
     <p>Here's some music to see you out.</p>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/FGRHqvC7f_o?si=4RMpv8Zyx43hBO3r"
         title="YouTube video player" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen></iframe>
+    
+    <address>
+        Kaiju Cafe<br>
+        1954 Shinagawa Ave<br>
+        Los Angeles, CA 90027<br>
+        +1 (310) 555-GOJI<br>
+        kaiju@example.com<br>
+        <a href="https://twitter.com/" target="_blank">Twitter</a><br>
+        <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+    </address>
+    
 </body>
 </html>
