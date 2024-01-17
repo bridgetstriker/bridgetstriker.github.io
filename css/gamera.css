@@ -41,38 +41,37 @@ h2 {
     color: var(--yellow);
 }
 nav a {
-    color: var(--ltgrey);
+    color: var(--black);
 }
 nav a:hover {
     color: var(--red);
 }
 nav ul {
+    display: flex;
     margin: 0;
-    padding: 2px;
+    padding: 20px 5px 5px 5px;
     list-style-type: none;
-    display:inline;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    gap: 0.5rem;
+    gap: 5rem;
 }
 nav li {
+    font-weight: bold;
+    display: inline;
     align-content: end;
-    padding: 1px;
-    padding-left: 3px;
 }
 main {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 4fr 1fr;
-    border: 1px solid red;
 }
 article, figure, menu, dl {
     max-width: 60vw;
     max-height: 45vw;
 }
 article {
-    grid-row: 3;
+    grid-row: 4;
 }
 
 img {
@@ -82,7 +81,7 @@ img {
 menu {
     columns: 2;
     grid-column: 1/2;
-    grid-row: 4;
+    grid-row: 3;
 
 }
 div {
