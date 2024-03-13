@@ -1,0 +1,39 @@
+@use '../util';
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: util.rem(40);
+    // max-width: 1000px;
+    width: min(100% - util.rem(40), 1000px);
+    margin-inline: auto;
+    font-size: 2rem;
+
+    @include util.breakpoint(large) {
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto;
+    }
+    
+    &__main, &__sidebar {
+        padding: util.rem(40);
+    }
+    &__main {
+        background-color: hsl(240, 99%, 33%);
+
+        @include util.breakpoint(medium) {
+            background-color: hsl(120, 100%, 30%);
+        }
+    }
+    &__sidebar {
+        background-color: hsl(300, 100%, 30%);
+        text-align: center;
+
+        @include util.breakpoint-down(medium) {
+            text-align: center;
+        }
+        @include util.breakpoint-down(small) {
+            text-align: right;
+        }
+    }
+}
