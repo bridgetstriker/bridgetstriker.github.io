@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger Menu</title>
+    <link rel="stylesheet" href="cats.css">
+    <script src="cats.js" async></script>
+    <script src="https://cdn.jsdelivr.net/gh/rick-liruixin/body-scroll-lock-upgrade@v1.1.0/lib/index.umd.js"></script>
+    <script src="script.js" async></script>
+</head>
+<body>
+    <header class="topnav wrapper">
+        <h1><a href="#">Cats in Space</a></h1>
+        <nav>
+            <span id="nav-label" hidden>Navigation</span>
+            <button id="btnOpen" class="topnav__open" aria-expanded="false" aria-labelledby="nav-label">
+                <img src="img/hamburger.svg" alt="" width="40" height="24">
+            </button>
+            <div class="topnav__menu" role="dialog" aria-labelledby="nav-label">
+                <button class="topnav__close" id="btnClose" aria-label="Close">
+                    <img src="img/close.svg" alt="" width="28" height="27">
+                </button>
+                <ul class="topnav__links">
+                    <li class="topnav__item"><a href="" class="topnav__link">Nyancat</a></li>
+                    <li class="topnav__item"><a href="" class="topnav__link">Catra</a></li>
+                    <li class="topnav__item"><a href="" class="topnav__link">Garfield</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+</body>
+</html>

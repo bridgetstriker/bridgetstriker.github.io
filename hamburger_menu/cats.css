@@ -1,0 +1,64 @@
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 1.5rem;
+}
+.topnav button {
+  background: none;
+  border: none;
+  padding: 0;
+}
+@media (width >= 40em) {
+  .topnav button {
+    display: none;
+  }
+}
+@media (width >= 40em) and (prefers-reduced-motion) {
+  .topnav button {
+    opacity: 1;
+  }
+}
+.topnav__open[aria-expanded=true] + .topnav__menu {
+  translate: 0;
+}
+.topnav__close {
+  display: block;
+  margin-inline-start: auto;
+  margin-block-end: 8rem;
+}
+.topnav img {
+  width: 2.5rem;
+}
+@media (width < 40em) {
+  .topnav__menu {
+    position: fixed;
+    inset: 0;
+    padding: 1.5rem;
+    background-color: hsl(256, 100%, 33%);
+    translate: 100vw 0;
+    transition: 0.5s ease-in-out;
+  }
+}
+@media (width < 40em) and (prefers-reduced-motion) {
+  .topnav__menu {
+    translate: 0;
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+  }
+}
+.topnav__links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+@media (width < 40em) {
+  .topnav__links {
+    flex-direction: column;
+  }
+}
+.topnav__item {
+  list-style-type: none;
+}/*# sourceMappingURL=cats.css.map */
