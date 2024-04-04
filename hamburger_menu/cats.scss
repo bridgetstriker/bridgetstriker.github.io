@@ -1,3 +1,14 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+body {
+    background: url(img/jeremy-perkins-uhjiu8FjnsQ-unsplash-small.jpg);
+}
 .topnav {
     display: flex;
     justify-content: space-between;
