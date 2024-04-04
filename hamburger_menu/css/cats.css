@@ -22,6 +22,25 @@ img {
   height: auto;
 }
 
+.wrapper {
+  width: min(100% - 3rem, 56.25rem);
+  margin-inline: auto;
+}
+
+.cat {
+  display: grid;
+  justify-items: center;
+  padding-block: 2rem;
+}
+
+.cat img {
+  margin-block-end: 1.5rem;
+}
+
+.cat p {
+  max-width: 70ch;
+}
+
 .topnav {
   display: flex;
   justify-content: space-between;
