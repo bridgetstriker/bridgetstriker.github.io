@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background-image: url(/img/jeremy-perkins-uhjiu8FjnsQ-unsplash-small.jpg);
+  background-image: url("../img/jeremy-perkins-uhjiu8FjnsQ-unsplash-small.jpg");
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 1rem;
