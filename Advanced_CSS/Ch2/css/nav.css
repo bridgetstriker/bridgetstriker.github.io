@@ -26,6 +26,25 @@ header .row {
 .menu-toggle:focus {
     color: #C85028;
 }
+.main-menu {
+    position: fixed;
+    display: none;
+    left: -200px;
+    top: 0;
+    height: 100%;
+    overflow-x: visible;
+    overflow-y: auto;
+    transition: left 0.3s ease;
+    z-index: 999;
+}
+.main-menu ul {
+    list-style: none;
+    margin: 0;
+    padding-top: 2.5em;
+    min-height: 100%;
+    width: 200px;
+    background-color: #1a1a1a;
+}
 
 
 header {
