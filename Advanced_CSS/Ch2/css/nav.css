@@ -65,6 +65,18 @@ header .row {
     right: 0;
     top: 0;
 }
+.main-menu:target {
+    display: block;
+    left: 0;
+    outline: none;
+}
+.main-menu:target .menu-close {
+    z-index: 1001;
+}
+.main-menu:target ul {
+    position: relative;
+    z-index: 1000;
+}
 
 
 header {
