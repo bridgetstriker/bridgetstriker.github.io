@@ -77,6 +77,17 @@ header .row {
     position: relative;
     z-index: 1000;
 }
+.main-menu:target + .backdrop {
+    position: fixed;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+    background-color: rgba(0, 0, 0, 0.85);
+    cursor: default;
+}
 
 
 header {
