@@ -45,6 +45,26 @@ header .row {
     width: 200px;
     background-color: #1a1a1a;
 }
+.main-menu a {
+    display: block;
+    padding: 0.75em;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #383838;
+}
+.main-menu li:first-child a {
+    border-top: 1px solid #383838;
+}
+.main-menu a:hover,
+.main-menu a:focus {
+    background: #333;
+    text-decoration: underline;
+}
+.main-menu .menu-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
 
 
 header {
