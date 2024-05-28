@@ -34,6 +34,9 @@ a:hover {
     color: white;
     text-decoration: none;
 }
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
 h1, h2, h3, ol, ul {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.3rem;
