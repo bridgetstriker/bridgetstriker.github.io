@@ -19,7 +19,7 @@ body {
 .intro {
     margin-top: 0;
     margin-right: 0;
-    padding-left: 7px;
+    padding: 0 10px 7px 7px;
     justify-content: left;
     flex-direction: column;
     background-color: antiquewhite;
