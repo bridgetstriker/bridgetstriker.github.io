@@ -16,7 +16,14 @@ body {
     padding: 10px;
     margin: 0;
 }
-
+.intro {
+    margin-top: 0;
+    margin-right: 0;
+    padding-left: 7px;
+    justify-content: left;
+    flex-direction: column;
+    background-color: antiquewhite;
+}
 .sidebar {
     margin-left: 20px;
     padding: 50px 20px;
