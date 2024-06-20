@@ -58,7 +58,7 @@ a:hover {
     padding-top: 60px;
     border-left: 3px solid purple;
 }
-.sidebar {
+aside {
     grid-column: 4;
     grid-row: 1/5;
     margin-left: 20px;
