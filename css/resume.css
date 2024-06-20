@@ -24,6 +24,11 @@ header {
 p {
     width: 60vw;
 }
+.summary {
+    background-color: #c0e6e2;
+    border: 2px solid #020024;
+    border-radius: 5px;
+}
 a {
     color: #191970;
     font-weight: bold;
@@ -35,7 +40,7 @@ a:hover {
 .main {
     margin-top: 0;
     margin-right: 0;
-    padding-left: 7px;
+    padding: 10px 0 0 7px;
     width: 65vw;
     justify-content: left;
     flex-direction: column;
@@ -47,11 +52,14 @@ a:hover {
 }
 .job-item:nth-child(even) {
     background-color: #d7e6fa;
+    /* border: 2px solid #020024; */
 }
 .education {
     display: grid;
     grid-template-columns: 1fr 2fr;
     background-color: #d7e6fa;
+    border: 2px solid #020024;
+    border-radius: 5px;
 }
 .education:last-of-type {
     padding-bottom: 20px;
