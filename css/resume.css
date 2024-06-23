@@ -14,7 +14,8 @@ body {
 }
 .wrapper {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: subgrid;
+    /* grid-template-columns: 1fr; */
     grid-template-rows: 1fr;
 }
 header {
@@ -44,21 +45,38 @@ a:hover {
     width: 65vw;
     justify-content: left;
     flex-direction: column;
-    background-color: antiquewhite;
+    background-color: #40e0d0;
+}
+.contact {
+    display: flex;
+    width: 10vw;
+}
+.contact p {
+    text-align: center;
+}
+.info {
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+.gradient {
+    background: rgb(250, 235, 215);
+    background: radial-gradient(circle, rgba(250, 235, 215, 1) 0%, rgba(215, 230, 250, 1) 100%);
 }
 .job-item {
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
 .job-item:nth-child(even) {
-    background-color: #d7e6fa;
-    /* border: 2px solid #020024; */
+    color: #fff;
+    background-color: #060254;
+    border-top: 2px solid radial-gradient(circle, rgba(250, 235, 215, 1) 0%, rgba(215, 230, 250, 1) 100%);
 }
 .education {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    background-color: #d7e6fa;
-    border: 2px solid #020024;
+    color: #fff;
+    background-color: #060254;
+    /* border: 2px solid #020024; */
     border-radius: 5px;
 }
 .education:last-of-type {
@@ -80,7 +98,7 @@ aside {
     width: 25vw;
     flex-direction: column;
     justify-content: right;
-    /*background-color: #40E0D0;*/
+    /* background-color: #40E0D0; */
     background: rgb(2, 0, 36);
         background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(64, 224, 208, 1) 70%, rgba(0, 212, 255, 1) 100%);
     height: auto;
