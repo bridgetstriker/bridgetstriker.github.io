@@ -1,0 +1,162 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	display: inherit;
+}
+.logo {
+	display: flex;
+	padding: 5px;
+	width: 260px;
+	margin-left: 590px;
+	justify-content: center;
+}
+.wrapper {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	width: 80%;
+	margin: 0 auto;
+	padding: 1em;
+}
+section {
+	flex-basis: 57%;
+	margin-right: 10%;
+}
+hr {
+	
+}
+p {
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: inherit;
+	text-align: left;
+}
+.mission {
+	background-color: antiquewhite;
+	font-size: 1.2em;
+	margin-left: 120px;
+	max-width: 25vw;
+}
+img {
+	width: 600px;
+	height: auto;
+}
+.address {
+	display: flex;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: 1.5rem;
+	justify-content: center;
+	text-align: center;
+}
+ul {
+	display: flex;
+	flex-direction: row;
+	justify-content:left;
+	align-content: space-between;
+	list-style: none;
+	font-weight: bold;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: 1.5rem;
+	gap: 300px;
+	margin: 1em;
+	padding: 1em;
+	min-height: 100%;
+	width: inherit;
+	background: rgb(156, 171, 112);
+	background: linear-gradient(90deg, rgba(156, 171, 112, 1) 0%, rgba(222, 219, 187, 1) 100%);
+}
+h1, h2, h3 {
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: 3rem;
+}
+h1 {
+	text-align: center;
+}
+
+@media (max-width: 500px) {
+	ul {
+		gap: 40px;
+		width: 20px;
+	}
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+form {
+	padding-left: 250px;
+	width: 80vw;
+}
+fieldset {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	background-color: #f4f2f2;
+	border: 1px solid black;
+	border-radius: 10px;
+	margin-bottom: 2rem;
+}
+
+legend {
+	font-weight: bold;
+	font-size: 1.3rem;
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+	display: block;
+}
+label {
+	display: block;
+	font-weight: bold;
+	padding-bottom: 0.3rem;
+}
+textarea {
+	height: 10rem;
+	padding: 1rem;
+}
+select {
+	font-size: 1rem;
+}
+button {
+	font-size: 1rem;
+	margin: 2rem 0;
+	background-color: #0060cc;
+	color: white;
+	border: none;
+	padding: 0.5rem;
+	border-radius: 10px;
+}
+button:hover {
+	background-color: #4f9ffa;
+	color: white;
+}
+input:not([type="radio"]):not([type="checkbox"]), textarea, select {
+	display: block;
+	margin-bottom: 2rem;
+	width: 20rem;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1rem;
+	padding: 0 1rem;
+	border-radius: 10px;
+	border: 1px solid #000;
+}
+
+legend, input, label, textarea, button {
+	grid-column: 1/2;
+}
+iframe {
+	margin-top: -250px;
+	grid-column: 2/3;
+}
+.directions {
+	margin-top: inherit;
+
+}
