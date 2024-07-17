@@ -45,7 +45,7 @@ a:hover {
     width: 65vw;
     justify-content: left;
     flex-direction: column;
-    background-color: #40e0d0;
+    background-color: #fff;
 }
 .contact {
     display: flex;
