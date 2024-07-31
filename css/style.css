@@ -14,7 +14,7 @@ a {
     font-weight: bold;
 }
 a:hover {
-    color: white;
+    color: lightcyan;
     text-decoration: none;
 }
 .main {

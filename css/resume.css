@@ -35,7 +35,7 @@ a {
     font-weight: bold;
 }
 a:hover {
-    color: white;
+    color: lightcyan;
     text-decoration: none;
 }
 .main {
@@ -67,7 +67,7 @@ a:hover {
     grid-template-columns: 1fr 2fr;
 }
 .job-item:nth-child(even) {
-    color: #fff;
+    color: lightcyan;
     background-color: #060254;
     border-top: 2px solid radial-gradient(circle, rgba(250, 235, 215, 1) 0%, rgba(215, 230, 250, 1) 100%);
 }
