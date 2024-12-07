@@ -28,7 +28,7 @@ select.addEventListener("change", function (event) {
     console.log(url);
 
     // call the function and pass the URL
-    getDoggo("https://dog.ceo/api/breed/african/images/random");
+    getDoggo("https://dog.ceo/api/breed/affenpinscher/images/random");
 });
 
 async function getDoggo(url) {
