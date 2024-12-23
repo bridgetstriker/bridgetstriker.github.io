@@ -1,3 +1,5 @@
+@use '../util/' as u;
+
 // roboto-regular - latin
 @font-face {
     font-display: swap;
@@ -11,5 +13,12 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
+    src: url(../Library/Fonts/Roboto/Roboto-Bold.ttf);
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
     src: url(../Library/Fonts/Roboto/Roboto-Bold.ttf);
 }
