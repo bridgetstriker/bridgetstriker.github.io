@@ -11,3 +11,6 @@ h1 {
 h2 {
     @include u.fs-fluid(u.rem(375), u.rem(1200), u.rem(36), u.rem(48));
 }
+h3 {
+    @include u.fs-fluid(u.rem(375), u.rem(1200), u.rem(24), u.rem(36));
+}
