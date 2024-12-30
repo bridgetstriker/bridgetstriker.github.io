@@ -4,3 +4,7 @@ h1, h2, h3 {
     margin: 0;
     line-height: 1;
 }
+// 48px, 64px
+h1 {
+    @include u.fs-fluid(u.rem(375), u.rem(1200), u.rem(48), u.rem(64));
+}
