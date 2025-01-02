@@ -9,7 +9,7 @@
         }
     }
     &__home {
-        display: block;
+        display: grid;
         place-items: center;
         width: u.rem(46);
         height: u.rem(46);

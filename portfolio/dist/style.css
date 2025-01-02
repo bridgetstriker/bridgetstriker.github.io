@@ -103,7 +103,7 @@ p.large {
   }
 }
 .header__home {
-  display: block;
+  display: grid;
   place-items: center;
   width: 2.875rem;
   height: 2.875rem;
