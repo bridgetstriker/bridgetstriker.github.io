@@ -83,6 +83,17 @@ p.large {
   font-size: clamp(1rem, 0.8863636364rem + 0.4848484848vw, 1.25rem);
 }
 
+.wrapper {
+  width: min(100% - 40px, 73.75rem);
+  margin-inline: auto;
+  padding-block: 30px;
+}
+@media (width >= 75em) {
+  .wrapper {
+    padding-block: 60px;
+  }
+}
+
 .header__wrapper {
   padding-block: 20px;
 }
