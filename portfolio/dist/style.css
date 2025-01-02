@@ -70,6 +70,19 @@ h3 {
   text-transform: uppercase;
 }
 
+p {
+  line-height: 1.5;
+  max-width: 60ch;
+}
+p.small {
+  font-size: 1rem;
+  font-size: clamp(1rem, 0.9431818182rem + 0.2424242424vw, 1.125rem);
+}
+p.large {
+  font-size: 1rem;
+  font-size: clamp(1rem, 0.8863636364rem + 0.4848484848vw, 1.25rem);
+}
+
 .header__wrapper {
   padding-block: 20px;
 }

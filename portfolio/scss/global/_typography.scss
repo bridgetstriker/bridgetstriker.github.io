@@ -16,3 +16,14 @@ h3 {
     letter-spacing: 0.05em;
     text-transform: uppercase;
 }
+p {
+    line-height: 1.5;
+    max-width: 60ch;
+
+    &.small {
+        @include u.fs-fluid(u.rem(375), u.rem(1200), u.rem(16), u.rem(18));
+    }
+    &.large {
+        @include u.fs-fluid(u.rem(375), u.rem(1200), u.rem(16), u.rem(20));
+    }
+}
