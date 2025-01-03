@@ -13,6 +13,7 @@
         font-weight: 700;
         padding: 10px 20px;
         background: var(--color-accent2);
+        border-radius: 8px;
 
         @include u.breakpoint(large) {
             font-size: u.rem(18);
