@@ -9,3 +9,12 @@
         padding-block: 60px;
     }
 }
+
+.section-grid {
+    display: grid;
+    gap: 30px;
+
+    @include u.breakpoint(large) {
+        gap: 40px;
+    }
+}

@@ -94,6 +94,16 @@ p.large {
   }
 }
 
+.section-grid {
+  display: grid;
+  gap: 30px;
+}
+@media (width >= 75em) {
+  .section-grid {
+    gap: 40px;
+  }
+}
+
 .header__wrapper {
   padding-block: 20px;
 }
