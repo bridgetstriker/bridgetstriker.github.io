@@ -17,6 +17,7 @@
 
         @include u.breakpoint(large) {
             font-size: u.rem(18);
+            padding: 14px 24px;
         }
     }
 }

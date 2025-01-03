@@ -168,5 +168,6 @@ p.large {
 @media (width >= 75em) {
   .skills__tag {
     font-size: 1.125rem;
+    padding: 14px 24px;
   }
 }/*# sourceMappingURL=style.css.map */
