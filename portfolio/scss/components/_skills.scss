@@ -1,0 +1,21 @@
+@use '../util/' as u;
+
+.skills {
+
+    &__wrapper {
+
+    }
+    &__tags {
+
+    }
+    &__tag {
+        font-size: u.rem(16);
+        font-weight: 700;
+        padding: 10px 20px;
+        background: var(--color-accent2);
+
+        @include u.breakpoint(large) {
+            font-size: u.rem(18);
+        }
+    }
+}
