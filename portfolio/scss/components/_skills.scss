@@ -6,7 +6,12 @@
 
     }
     &__tags {
+        display: flex;
+        gap: 10px;
 
+        @include u.breakpoint(large) {
+            gap: 12px;
+        }
     }
     &__tag {
         font-size: u.rem(16);

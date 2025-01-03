@@ -158,6 +158,15 @@ p.large {
   border-radius: 20px;
 }
 
+.skills__tags {
+  display: flex;
+  gap: 10px;
+}
+@media (width >= 75em) {
+  .skills__tags {
+    gap: 12px;
+  }
+}
 .skills__tag {
   font-size: 1rem;
   font-weight: 700;
