@@ -1,0 +1,19 @@
+@use '../util/' as u;
+
+.projects {
+
+    &__item {
+        display: grid;
+        gap: 16px;
+    }
+    &__image {
+        border-radius: 12px;
+    }
+    &__text {
+
+    }
+    &__buttons {
+        display: flex;
+        gap: 20px;
+    }
+}
