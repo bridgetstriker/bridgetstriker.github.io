@@ -201,4 +201,16 @@ p.large {
 }
 .skills__tag:hover {
   background: var(--color-accent2-hover);
+}
+
+.projects__item {
+  display: grid;
+  gap: 16px;
+}
+.projects__image {
+  border-radius: 12px;
+}
+.projects__buttons {
+  display: flex;
+  gap: 20px;
 }/*# sourceMappingURL=style.css.map */
