@@ -250,4 +250,38 @@ p.large {
 .projects__buttons {
   display: flex;
   gap: 20px;
+}
+
+@media (width >= 43.75em) {
+  .contact {
+    justify-items: center;
+  }
+}
+.contact__links {
+  display: grid;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+}
+.contact__item {
+  list-style-type: none;
+}
+.contact__link {
+  display: grid;
+  grid-template-columns: 1.5rem auto;
+  gap: 20px;
+  align-items: center;
+  color: var(--color-text);
+  font-weight: 700;
+  font-size: 1.125rem;
+  transition: color 150ms ease-in-out;
+}
+.contact__link:hover {
+  color: var(--color-accent);
+}
+.contact__link:hover svg > path {
+  fill: var(--color-accent);
+}
+.contact__icon path {
+  transition: fill 150ms ease-in-out;
 }/*# sourceMappingURL=style.css.map */
