@@ -25,6 +25,7 @@
   --color-accent: hsl(169, 100%, 47%);
   --color-accent2: hsl(245, 45%, 30%);
   --color-accent2-hover: hsl(245, 45%, 45%);
+  --magenta: #e310cb;
 }
 
 *, *::before, *::after {
@@ -206,15 +207,28 @@ p.large {
 }
 
 .skills {
-  justify-items: center;
+  display: flex;
 }
+/* .skills h2 {
+} */
 .skills__tags {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  justify-content: center;
+  justify-content: flex-start;
   max-width: 36rem;
 }
+.skills aside {
+  background-color: var(--color-accent2);
+  justify-content: last;
+}
+.skills aside a {
+  color: var(--color-text);
+}
+.skills aside a:hover {
+  color: var(--color-accent);
+}
+
 @media (width >= 75em) {
   .skills__tags {
     gap: 12px;
