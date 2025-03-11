@@ -260,7 +260,7 @@ aside a:hover {
 .skills aside {
   background-color: var(--color-accent2);
   justify-content: last;
-  padding-left: 20px;
+  padding: 20px;
 }
 .skills aside a {
   color: var(--color-text);
