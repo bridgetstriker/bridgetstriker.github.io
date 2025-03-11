@@ -52,11 +52,13 @@ hr {
 
 .gargoyle1 {
   float: left;
+  background-color: white;
   padding: 10px;
 }
 
 .gargoyle2 {
   float: right;
+  background-color: white;
   padding: 10px;
 }
 
