@@ -229,7 +229,7 @@ aside a:hover {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-  align-self: center;
+  align-self: normal;
   max-width: 36rem;
 }
 .skills aside {
