@@ -123,7 +123,7 @@ p.large {
 aside {
   background-color: var(--color-accent2);
   justify-content: last;
-  margin-left: 20px;
+  padding: 10px;
 }
 
 aside a {
