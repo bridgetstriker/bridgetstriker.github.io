@@ -44,8 +44,31 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  font-style: italic;
+}
+hr {
+  color: green;
 }
 
+.gargoyle1 {
+  float: left;
+  padding: 10px;
+}
+
+.gargoyle2 {
+  float: right;
+  padding: 10px;
+}
+
+.conquered1 {
+  float: left;
+  padding: 10px;
+}
+
+.conquered2 {
+  float: right;
+  padding: 10px;
+}
 a {
   color: var(--color-accent);
   text-decoration: none;
