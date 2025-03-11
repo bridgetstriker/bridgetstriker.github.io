@@ -235,7 +235,7 @@ aside a:hover {
 .skills aside {
   background-color: var(--color-accent2);
   justify-content: last;
-  margin-left: 20px;
+  padding-left: 20px;
 }
 .skills aside a {
   color: var(--color-text);
