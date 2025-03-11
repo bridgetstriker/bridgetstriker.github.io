@@ -254,7 +254,7 @@ aside a:hover {
   flex-wrap: wrap;
   gap: 15px;
   justify-content: center;
-  align-self: auto;
+  align-items: center;
   max-width: 36rem;
 }
 .skills aside {
