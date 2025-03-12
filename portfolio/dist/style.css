@@ -255,7 +255,7 @@ aside a:hover {
   /* gap: 15px; */
   justify-content: center;
   align-items: center;
-  /* max-width: 36rem; */
+  max-width: 36rem;
 }
 .skills aside {
   background-color: var(--color-accent2);
