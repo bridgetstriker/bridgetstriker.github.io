@@ -253,7 +253,6 @@ aside a:hover {
 .skills__tags {
   display: flex;
   flex-wrap: wrap;
-  /* gap: 15px; */
   justify-content: center;
   align-items: center;
   max-width: 36rem;
