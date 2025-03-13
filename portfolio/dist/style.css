@@ -54,11 +54,13 @@ hr {
   float: left;
   background-color: white;
   padding: 10px;
+  opacity: 50%;
 }
 .gargoyle2 {
   float: right;
   background-color: white;
   padding: 10px;
+  opacity: 50%;
 }
 
 .conquered1 {
