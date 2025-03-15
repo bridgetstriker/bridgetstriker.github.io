@@ -33,6 +33,7 @@
 }
 
 body {
+  display: flex;
   margin: 0;
   margin-block-end: 50vh;
   background: var(--color-bg);
@@ -44,38 +45,19 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  font-style: italic;
 }
-hr {
-  color: green;
-}
-
-.gargoyle1 {
-  float: left;
-  background-color: white;
-  padding: 10px;
-  opacity: 50%;
-}
-.gargoyle2 {
+.doggo {
   float: right;
-  background-color: white;
-  padding: 10px;
-  opacity: 50%;
+  padding: 5px;
 }
-
-.conquered1 {
-  float: left;
-  padding: 10px;
-}
-.conquered2 {
+.fisheye {
   float: right;
-  padding: 10px;
+  padding: 5px;
 }
-.conquered {
-  display: flex;
-  justify-content: space-between;
+.oldschool {
+  float: right;
+  padding: 5px;
 }
-
 a {
   color: var(--color-accent);
   text-decoration: none;
@@ -129,7 +111,6 @@ aside {
   float: right;
   background-color: var(--color-accent2);
   justify-content: last;
-  padding: 10px;
 }
 
 aside a {
@@ -140,6 +121,14 @@ aside a:hover {
   color: var(--color-accent);
 }
 
+.intro p {
+  line-height: 1.5;
+  max-width: 100ch;
+}
+.footer p {
+  line-height: 1.5;
+  max-width: 100ch;
+}
 @media (width >= 75em) {
   .wrapper {
     padding-block: 60px;
@@ -250,6 +239,30 @@ aside a:hover {
   border-radius: 20px;
 }
 
+.gargoyle1 {
+  float: left;
+  padding: 10px;
+}
+
+.gargoyle2 {
+  float: right;
+  padding: 10px;
+}
+
+.conquered1 {
+  float: left;
+  padding: 10px;
+}
+
+.conquered2 {
+  float: right;
+  padding: 10px;
+}
+.conquered {
+  display: flex;
+  justify-content: space-between;
+}
+
 .skills {
   display: flex;
 }
@@ -258,14 +271,13 @@ aside a:hover {
 .skills__tags {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  gap: 10px;
+  justify-content: flex-start;
   max-width: 36rem;
 }
 .skills aside {
   background-color: var(--color-accent2);
   justify-content: last;
-  padding: 20px;
 }
 .skills aside a {
   color: var(--color-text);
@@ -291,7 +303,7 @@ aside a:hover {
 @media (width >= 75em) {
   .skills__tag {
     font-size: 1.125rem;
-    /* padding: 14px 24px; */
+    padding: 14px 24px;
   }
 }
 .skills__tag:hover {
