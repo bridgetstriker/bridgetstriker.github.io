@@ -8,7 +8,7 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 	margin: 0;
 	padding: 0;
-	background-image: url(../images/looks_like_Jupiter.jpg);
+	background-image: url(/images/looks_like_Jupiter.jpg);
 }
 a {
 	color: #E0FFFF;
