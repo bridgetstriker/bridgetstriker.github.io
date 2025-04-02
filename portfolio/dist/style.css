@@ -113,7 +113,7 @@ aside a {
 aside a:hover {
   color: var(--color-accent);
 }
-aside>ul {
+aside > ul {
   display: flex;
   background-color: var(--color-accent2);
   justify-content: space-between;
