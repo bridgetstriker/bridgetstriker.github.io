@@ -99,7 +99,7 @@ p.large {
 }
 
 .wrapper {
-  /* width: min(100% - 40px, 73.75rem); */
+  width: min(100% - 40px, 73.75rem);
   margin-inline: auto;
   padding-block: 30px;
 }
