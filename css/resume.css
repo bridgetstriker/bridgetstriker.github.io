@@ -38,8 +38,9 @@
 }
 body {
     margin-left: 20px;
-    background-image: url(../images/drybrush-lightgray.jpg);
-    background-repeat: repeat;
+    background: var(--color-bg);
+    color: var(--color-text);
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 .wrapper {
     display: grid;
@@ -89,10 +90,10 @@ a:hover {
     align-content: center;
 }
 .contact a {
-    
+    columns: var(--color-text);
 }
 .contact a:hover {
-    color: #191970;
+    color: var(--color-accent);
     text-decoration: none;
 }
 .info {
