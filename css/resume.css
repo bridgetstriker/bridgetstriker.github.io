@@ -48,11 +48,19 @@ a:hover {
     background-color: #fffaf0;
 }
 .contact {
-    display: flex;
+    padding-left: 3rem;
     width: 10vw;
 }
+.contact h2 {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
 .contact p {
-    text-align: center;
+    float: left;
+    align-content: center;
+}
+.contact a {
+    
 }
 .contact a:hover {
     color: #191970;
