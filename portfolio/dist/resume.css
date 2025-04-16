@@ -1,40 +1,94 @@
-/* style sheet */
-* {
+@font-face {
+    font-display: swap;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    src: url(../Library/Fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    src: url(../Library/Fonts/Roboto/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 900;
+    src: url(../Library/Fonts/Roboto/Roboto-Bold.ttf);
+}
+
+:root {
+    --color-bg: hsl(244, 51%, 11%);
+    --color-text: hsl(0, 0%, 94%);
+    --color-accent: hsl(169, 100%, 47%);
+    --color-accent2: hsl(245, 45%, 30%);
+    --color-accent2-hover: hsl(245, 45%, 45%);
+    --magenta: #e310cb;
+}
+
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-}
+
 body {
-    margin-left: 20px;
-    background-image: url(../images/drybrush-lightgray.jpg);
-    background-repeat: repeat;
+    margin: 0;
+    margin-block-end: 50vh;
+    background: var(--color-bg);
+    color: var(--color-text);
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
+}
+
+.contact {
+    padding-left: 3rem;
+    width: 10vw;
+}
+.contact h2 {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+.contact p {
+    float: left;
+    align-content: center;
+}
+.contact a {
+    color: var(--color-text);
+}
+.contact a:hover {
+    color: var(--color-accent);
+    text-decoration: none;
+}
+.info {
+    text-align: auto;
+    grid-column-start: 2;
+    grid-column-end: 2;
 }
 .wrapper {
     display: grid;
     grid-template-columns: subgrid;
     grid-template-rows: 1fr;
 }
-header {
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-p {
-    width: 60vw;
-}
 .summary {
-    background-color: #c0e6e2;
-    border: 2px solid #020024;
     border-radius: 5px;
 }
 a {
-    color: #191970;
+    color: var(--color-accent2);
     font-weight: bold;
 }
 a:hover {
-    color: lightcyan;
+    color: var(--color-accent2-hover);
     text-decoration: none;
 }
 .main {
@@ -44,24 +98,9 @@ a:hover {
     width: 65vw;
     justify-content: left;
     flex-direction: column;
-    color: hsl(174, 51%, 19%);
-    background-color: #fffaf0;
+    color: var(--color-text);
 }
-.contact {
-    display: flex;
-    width: 10vw;
-}
-.contact p {
-    text-align: center;
-}
-.contact a:hover {
-    color: #191970;
-    text-decoration: none;
-}
-.info {
-    grid-column-start: 2;
-    grid-column-end: 2;
-}
+
 .gradient {
     background: rgb(250, 235, 215);
     background: radial-gradient(circle, rgba(250, 235, 215, 1) 0%, rgba(215, 230, 250, 1) 100%);
@@ -73,7 +112,6 @@ a:hover {
 .education {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    color: hsl(174, 51%, 19%);
 }
 .education:last-of-type {
     padding-bottom: 20px;
@@ -103,7 +141,7 @@ h1, h2, h3, p, ol, ul, li {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
     list-style-type: none;
-    padding: 0;
+    padding: 0 0 1rem 0;
     margin: 0;
 }
 li {
@@ -111,16 +149,10 @@ li {
     padding-left: 20px;
     margin-left: 5px;
 }
-h1, h2 {
-    color: hsl(174, 51%, 19%);
-    font-family: 'Water Brush', cursive;
-    font-size: 3rem;
-    padding-top: 15px;
-    text-align: center;
-}
 h1 {
     font-size: 4rem;
     text-align: center;
+    padding: 20px 10px;
 }
 h3 {
     padding: 20px 10px;
