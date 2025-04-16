@@ -1,11 +1,40 @@
-/* style sheet */
-* {
-    box-sizing: border-box;
+@font-face {
+    font-display: swap;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    src: url(../Library/Fonts/Roboto/Roboto-Regular.ttf);
 }
+
+@font-face {
+    font-display: swap;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    src: url(../Library/Fonts/Roboto/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 900;
+    src: url(../Library/Fonts/Roboto/Roboto-Bold.ttf);
+}
+
+:root {
+    --color-bg: hsl(244, 51%, 11%);
+    --color-text: hsl(0, 0%, 94%);
+    --color-accent: hsl(169, 100%, 47%);
+    --color-accent2: hsl(245, 45%, 30%);
+    --color-accent2-hover: hsl(245, 45%, 45%);
+    --magenta: #e310cb;
+}
+
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 body {
     margin-left: 20px;
