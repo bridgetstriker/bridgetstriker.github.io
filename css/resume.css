@@ -49,8 +49,8 @@ body {
     grid-template-rows: 1fr;
 }
 header {
-    grid-row-start: 1;
-    grid-row-end: 2;
+    display: flex;
+    justify-content: center;
 }
 p {
     width: 60vw;
