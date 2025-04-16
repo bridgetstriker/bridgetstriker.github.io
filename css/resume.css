@@ -37,7 +37,8 @@
     box-sizing: border-box;
 }
 body {
-    margin-left: 20px;
+    margin: 0;
+    margin-block-end: 50vh;
     background: var(--color-bg);
     color: var(--color-text);
     font-family: "Roboto", Arial, Helvetica, sans-serif;
