@@ -52,12 +52,9 @@ header {
     grid-template-columns: subgrid;
     grid-template-rows: 1fr;
 }
-/* p {
-    width: 60vw;
-} */
 .summary {
-    background-color: #c0e6e2;
-    border: 2px solid #020024;
+    background-color: var(--color-accent);
+    border: 2px solid var(--color-text);
     border-radius: 5px;
 }
 a {
