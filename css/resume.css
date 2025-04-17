@@ -95,6 +95,7 @@ a:hover {
     text-decoration: none;
 }
 .info {
+    text-align: auto;
     grid-column-start: 2;
     grid-column-end: 2;
 }
