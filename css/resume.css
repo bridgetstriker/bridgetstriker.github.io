@@ -43,18 +43,18 @@ body {
     color: var(--color-text);
     font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
+header {
+    display: flex;
+    justify-content: center;
+}
 .wrapper {
     display: grid;
     grid-template-columns: subgrid;
     grid-template-rows: 1fr;
 }
-header {
-    display: flex;
-    justify-content: center;
-}
-p {
+/* p {
     width: 60vw;
-}
+} */
 .summary {
     background-color: #c0e6e2;
     border: 2px solid #020024;
