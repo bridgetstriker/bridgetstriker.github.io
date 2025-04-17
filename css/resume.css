@@ -53,8 +53,8 @@ header {
     grid-template-rows: 1fr;
 }
 .summary {
-    background-color: var(--color-accent);
-    border: 2px solid var(--color-text);
+    /* background-color: var(--color-accent);
+    border: 2px solid var(--color-text); */
     border-radius: 5px;
 }
 a {
