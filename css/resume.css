@@ -73,7 +73,7 @@ a:hover {
     justify-content: left;
     flex-direction: column;
     color: hsl(174, 51%, 19%);
-    background-color: #fffaf0;
+    /* background-color: #fffaf0; */
 }
 .contact {
     padding-left: 3rem;
