@@ -53,6 +53,29 @@ header {
     grid-template-columns: subgrid;
     grid-template-rows: 1fr;
 }
+.contact {
+    padding-left: 3rem;
+    width: 10vw;
+}
+
+.contact h2 {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.contact p {
+    float: left;
+    align-content: center;
+}
+
+.contact a {
+    columns: var(--color-text);
+}
+
+.contact a:hover {
+    color: var(--color-accent);
+    text-decoration: none;
+}
 .summary {
     border-radius: 5px;
 }
@@ -73,25 +96,7 @@ a:hover {
     flex-direction: column;
     color: hsl(174, 51%, 19%);
 }
-.contact {
-    padding-left: 3rem;
-    width: 10vw;
-}
-.contact h2 {
-    font-size: 1.5rem;
-    padding: 1rem;
-}
-.contact p {
-    float: left;
-    align-content: center;
-}
-.contact a {
-    columns: var(--color-text);
-}
-.contact a:hover {
-    color: var(--color-accent);
-    text-decoration: none;
-}
+
 .info {
     text-align: auto;
     grid-column-start: 2;
