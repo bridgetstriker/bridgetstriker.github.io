@@ -58,11 +58,11 @@ header {
     border-radius: 5px;
 }
 a {
-    color: #191970;
+    color: var(--color-accent2);
     font-weight: bold;
 }
 a:hover {
-    color: lightcyan;
+    color: var(--color-accent2-hover);
     text-decoration: none;
 }
 .main {
