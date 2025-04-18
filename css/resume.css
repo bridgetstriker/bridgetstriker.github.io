@@ -145,13 +145,13 @@ li {
     padding-left: 20px;
     margin-left: 5px;
 }
-h1, h2 {
+/* h1, h2 {
     color: hsl(174, 51%, 19%);
     font-family: 'Water Brush', cursive;
     font-size: 3rem;
     padding-top: 15px;
     text-align: center;
-}
+} */
 h1 {
     font-size: 4rem;
     text-align: center;
