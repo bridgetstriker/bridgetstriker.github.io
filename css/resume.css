@@ -76,6 +76,11 @@ header {
     color: var(--color-accent);
     text-decoration: none;
 }
+.info {
+    text-align: auto;
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
 .summary {
     border-radius: 5px;
 }
@@ -97,11 +102,6 @@ a:hover {
     color: hsl(174, 51%, 19%);
 }
 
-.info {
-    text-align: auto;
-    grid-column-start: 2;
-    grid-column-end: 2;
-}
 .gradient {
     background: rgb(250, 235, 215);
     background: radial-gradient(circle, rgba(250, 235, 215, 1) 0%, rgba(215, 230, 250, 1) 100%);
