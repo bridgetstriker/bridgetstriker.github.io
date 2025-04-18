@@ -155,6 +155,7 @@ h1, h2 {
 h1 {
     font-size: 4rem;
     text-align: center;
+    padding: 20px 10px;
 }
 h3 {
     padding: 20px 10px;
