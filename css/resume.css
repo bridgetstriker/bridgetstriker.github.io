@@ -53,8 +53,6 @@ header {
     grid-template-rows: 1fr;
 }
 .summary {
-    /* background-color: var(--color-accent);
-    border: 2px solid var(--color-text); */
     border-radius: 5px;
 }
 a {
@@ -73,7 +71,6 @@ a:hover {
     justify-content: left;
     flex-direction: column;
     color: hsl(174, 51%, 19%);
-    /* background-color: #fffaf0; */
 }
 .contact {
     padding-left: 3rem;
