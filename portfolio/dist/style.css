@@ -121,6 +121,12 @@ aside > ul {
   background-color: var(--color-accent2);
   justify-content: space-between;
 }
+@media (max-width: 25rem) {
+  aside > ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 aside > ul > li {
   display: block;
   list-style-type: none;
