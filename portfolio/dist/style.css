@@ -103,10 +103,24 @@ p.large {
   margin-inline: auto;
   padding-block: 30px;
 }
-.gradient {
-  background: linear-gradient(90deg, rgba(255, 23, 228, 1) 0%, rgba(134, 251, 251, 0.9934174353335085) 100%);
-  height: 2px;
+.main {
+  margin-top: 0;
+  margin-right: 0;
+  padding: 10px 0 0 7px;
+  width: 65vw;
 }
+
+.jobs {
+  display: grid;
+    margin-top: 0;
+    margin-right: 0;
+    padding: 10px 0 0 7px;
+    width: 65vw;
+}
+  .gradient {
+    background: linear-gradient(90deg, rgba(255, 23, 228, 1) 0%, rgba(134, 251, 251, 0.9934174353335085) 100%);
+    height: 2px;
+  }
 aside {
   clear: both;
 }
