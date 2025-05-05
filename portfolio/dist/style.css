@@ -33,14 +33,49 @@
 }
 
 body {
-  display: flex;
+  display: grid;
   margin: 0;
   margin-block-end: 50vh;
   background: var(--color-bg);
   color: var(--color-text);
   font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
-
+.wrapper {
+  width: min(100% - 40px, 73.75rem);
+  margin-inline: auto;
+  padding-block: 30px;
+}
+.main {
+  margin-top: 0;
+  margin-right: 0;
+  padding: 10px 0 0 7px;
+  width: 65vw;
+}
+.contact {
+  margin-top: -90px;
+  margin-right: 0;
+}
+.summary {
+  align-items: end;
+}
+.jobs {
+  margin-top: 0;
+  margin-right: 0;
+  padding: 10px 0 10px 140px;
+  width: 65vw;
+}
+@media (min-width: >= 43.75rem) {
+  .jobs {
+    grid-template-columns: repeat(2, 40px);
+    grid-template-rows: 2fr;
+  }
+}
+.job-item, .job-details {
+  grid-column: 1/2;
+}
+.job-summary {
+  grid-column: 2/3;
+}
 img {
   display: block;
   max-width: 100%;
@@ -64,6 +99,7 @@ a {
 }
 
 h1, h2, h3 {
+  padding: 0.5rem;
   margin: 0;
   line-height: 1;
 }
@@ -71,13 +107,12 @@ h1, h2, h3 {
 h1 {
   font-size: 3rem;
   font-size: clamp(3rem, 2.5454545455rem + 1.9393939394vw, 4rem);
+  clear: left;
 }
-
 h2 {
   font-size: 2.25rem;
   font-size: clamp(2.25rem, 1.9090909091rem + 1.4545454545vw, 3rem);
 }
-
 h3 {
   font-size: 1.5rem;
   font-size: clamp(1.5rem, 1.1590909091rem + 1.4545454545vw, 2.25rem);
@@ -98,41 +133,16 @@ p.large {
   font-size: clamp(1rem, 0.8863636364rem + 0.4848484848vw, 1.25rem);
 }
 
-.wrapper {
-  width: min(100% - 40px, 73.75rem);
-  margin-inline: auto;
-  padding-block: 30px;
+.gradient {
+  background: linear-gradient(90deg, rgba(255, 23, 228, 1) 0%, rgba(134, 251, 251, 0.9934174353335085) 100%);
+  height: 2px;
 }
-.main {
-  margin-top: 0;
-  margin-right: 0;
-  padding: 10px 0 0 7px;
-  width: 65vw;
-}
-
-.jobs {
-  display: grid;
-  margin-top: 0;
-  margin-right: 0;
-  padding: 10px 0 0 7px;
-  width: 65vw;
-}
-  .gradient {
-    background: linear-gradient(90deg, rgba(255, 23, 228, 1) 0%, rgba(134, 251, 251, 0.9934174353335085) 100%);
-    height: 2px;
-  }
 aside {
   clear: both;
 }
-aside a {
-  color: var(--color-text);
-}
-aside a:hover {
-  color: var(--color-accent);
-}
 aside > ul {
   display: flex;
-  background-color: var(--color-accent2);
+  background-color: var(--color-accent2-hover);
   justify-content: space-between;
 }
 @media (max-width: 25rem) {
@@ -146,6 +156,12 @@ aside > ul > li {
   list-style-type: none;
   margin: 0;
   padding: 1rem;
+}
+aside a {
+  color: var(--color-text);
+}
+aside a:hover {
+  color: var(--color-accent);
 }
 
 .intro p {
@@ -213,6 +229,7 @@ aside > ul > li {
 .header__home {
   display: grid;
   place-items: center;
+  float: left;
   width: 2.875rem;
   height: 2.875rem;
   border-radius: 10px;
@@ -229,11 +246,18 @@ aside > ul > li {
     height: 3.75rem;
     font-size: 1.75rem;
   }
+  .header__home:hover {
+    background: var(--color-text);
+  }
+  .header__links li {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row nowrap;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+  }
 }
-.header__home:hover {
-  background: var(--color-text);
-}
-
 .hero {
   display: grid;
   gap: 30px;
@@ -269,11 +293,13 @@ aside > ul > li {
 
 .gargoyle1 {
   float: left;
+  /* clear: left; */
   padding: 10px;
 }
 
 .gargoyle2 {
   float: right;
+  /* clear: right; */
   padding: 10px;
 }
 
@@ -343,18 +369,28 @@ aside > ul > li {
   gap: 16px;
 }
 @media (width >= 43.75em) {
-  .projects__item {
+  aside > ul > li {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 1rem;
+  }
+.projects__item {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
   }
+
   .projects__item:nth-child(3) .projects__image {
-    order: 3;
+    order: 1;
   }
+
   .projects__item:nth-child(3) .projects__text {
     order: 2;
   }
+
   .projects__item:nth-child(3) .projects__buttons {
-    order: 4;
+    order: 3;
   }
 }
 .projects__image {
@@ -371,7 +407,9 @@ aside > ul > li {
 
 @media (width >= 43.75em) {
   .contact {
-    justify-items: center;
+    display: flex;
+    justify-items: flex-start;
+    float: right;
   }
 }
 .contact__links {
@@ -379,9 +417,11 @@ aside > ul > li {
   gap: 16px;
   margin: 0;
   padding: 0;
+  float: right;
 }
 .contact__item {
   list-style-type: none;
+  padding-left: -50rem;
 }
 .contact__link {
   display: grid;
@@ -401,4 +441,6 @@ aside > ul > li {
 }
 .contact__icon path {
   transition: fill 150ms ease-in-out;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
