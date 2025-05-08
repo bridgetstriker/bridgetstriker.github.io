@@ -25,6 +25,7 @@
   --color-accent: hsl(169, 100%, 47%);
   --color-accent2: hsl(245, 45%, 30%);
   --color-accent2-hover: hsl(245, 45%, 45%);
+  --turquoise: rgb(72, 209, 204);
   --magenta: #e310cb;
 }
 
@@ -33,7 +34,6 @@
 }
 
 body {
-  display: grid;
   margin: 0;
   margin-block-end: 50vh;
   background: var(--color-bg);
@@ -52,29 +52,32 @@ body {
   width: 65vw;
 }
 .contact {
-  margin-top: -90px;
+  margin-top: -150px;
   margin-right: 0;
 }
 .summary {
+  color: var(--color-bg);
+  background-color: var(--color-accent);
   align-items: end;
 }
 .jobs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   margin-top: 0;
   margin-right: 0;
   padding: 10px 0 10px 140px;
-  width: 65vw;
 }
-@media (min-width: >= 43.75rem) {
-  .jobs {
-    grid-template-columns: repeat(2, 40px);
-    grid-template-rows: 2fr;
-  }
-}
+
 .job-item, .job-details {
-  grid-column: 1/2;
+  grid-column: 1 / 2;
 }
 .job-summary {
-  grid-column: 2/3;
+  grid-column: 2 / 3;
+  color: var(--color-bg);
+  background-color: var(--turquoise);
+}
+.job-summary > ul > li {
+  list-style-type: none;
 }
 img {
   display: block;
@@ -112,7 +115,6 @@ h1 {
 h2 {
   font-size: 2.25rem;
   font-size: clamp(2.25rem, 1.9090909091rem + 1.4545454545vw, 3rem);
-  padding-top: 5rem;
 }
 h3 {
   font-size: 1.5rem;
@@ -422,7 +424,7 @@ aside a:hover {
 }
 .contact__item {
   list-style-type: none;
-  padding-left: -50rem;
+  /* padding-left: -50rem; */
 }
 .contact__link {
   display: grid;
