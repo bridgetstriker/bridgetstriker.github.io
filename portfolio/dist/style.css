@@ -26,7 +26,8 @@
   --color-accent2: hsl(245, 45%, 30%);
   --color-accent2-hover: hsl(245, 45%, 45%);
   --turquoise: rgb(72, 209, 204);
-  --magenta: #e310cb;
+  --magenta: hsl(307, 87%, 48%);
+  --salmon: rgb(255, 160, 122);
 }
 
 *, *::before, *::after {
@@ -57,7 +58,7 @@ body {
 }
 .summary {
   color: var(--color-bg);
-  background-color: var(--color-accent);
+  background-color: var(--turquoise);
   align-items: end;
 }
 .jobs {
@@ -70,6 +71,14 @@ body {
 
 .job-item, .job-details {
   grid-column: 1 / 2;
+}
+.job-address {
+  grid-column: 2 / 3;
+  color: var(--color-bg);
+  background-color: var(--salmon);
+}
+.job-address p {
+  padding-left: 2.5rem;
 }
 .job-summary {
   grid-column: 2 / 3;
