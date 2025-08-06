@@ -156,7 +156,7 @@ main {
   gap: 3rem;
   background-color: var(--white);
   padding: 3rem;
-  border-radius: var(--corner);
+  border-radius: var(--corners);
 }
 .project ul {
   display: flex;
