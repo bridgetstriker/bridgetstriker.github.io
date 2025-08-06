@@ -14,6 +14,13 @@
 /* set the box sizing to border-box for layouts */
 html {
   box-sizing: border-box;
+  color-scheme: light dark;
+}
+html:has(#mode-switcher #light:checked) {
+  color-scheme: light;
+}
+html:has(#mode-switcher #dark:checked) {
+  color-scheme: dark;
 }
 *,
 *::before,
