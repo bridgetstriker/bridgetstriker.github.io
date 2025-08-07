@@ -245,7 +245,7 @@ main {
     width: 4em;
   }
   .radio-switch input:first-of-type:checked ~ label:first-of-type:after {
-    background: vatr(--marina);
+    background: var(--marina);
   }
   .radio-switch input:first-of-type:checked ~ label:first-of-type:before {
     transform: translateX(-2em);
