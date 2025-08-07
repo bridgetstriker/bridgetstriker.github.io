@@ -297,6 +297,9 @@ main {
   .footer-text .icons {
     grid-column: 1/4;
   }
+  .radio-switch {
+    justify-content: flex-end;
+  }
 }
 @media (min-width: 850px) {
   main {
