@@ -83,7 +83,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     margin-top: 0;
     margin-right: 0;
-    padding-left: 10px;
+    padding-left: 135px;
 }
 
 @media (max-width: 25rem) {
