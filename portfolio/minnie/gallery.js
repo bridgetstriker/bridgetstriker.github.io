@@ -23,7 +23,7 @@ listen(document, "mouseup touchend").start(() => {
         velocity: ballXY.getVelocity(),
         to: { x: 0, y: 0 },
         stiffness: 200
-        // mass: 1,
-        // damping: 10
+        mass: 1,
+        damping: 10
     }).start(ballXY);
 });
