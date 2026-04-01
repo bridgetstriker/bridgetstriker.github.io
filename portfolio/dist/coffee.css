@@ -1,0 +1,47 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+header {
+    background-color: #43281c;
+    width: 100%;
+}
+.logo {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 7%;
+}
+h1 {
+    color: bisque;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: bisque;
+}
+ul {
+    list-style-type: none;
+}
+.menu {
+    grid-column: 1/2;
+}
+form {
+    grid-column: 2/3;
+}
+button {
+    background-color: #43281c;
+    width: 100%;
+    align-self: center;
+    border-radius: 10px;
+}
