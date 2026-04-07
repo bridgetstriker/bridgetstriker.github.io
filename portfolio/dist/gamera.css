@@ -1,0 +1,145 @@
+/* Here are some possible starting values for fonts and colors. You may change them if you wish. The CodePen is linked to the specified Google fonts. If you change your font, you'll need to change the linked fonts as well. See the "Settings" button at the top right of the page to do this. */
+
+:root {
+    --creep: 'Creepster', cursive;
+    --regular-font: 'Source Sans Pro', sans-serif;
+    --red: #BF2C53;
+    --black: #00090D;
+    --ltgrey: #BFBFBF;
+    --dkgrey: #6E736F;
+    --yellow: #F2B90F;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black);
+}
+h1 {
+    font-size: 3rem;
+}
+h1, h2, h3, dl, dt {
+    font-family: var(--creep);
+}
+h1 {
+    color: var(--yellow);
+}
+h2 {
+    grid-column: 1;
+    grid-row: 2;
+    background-color: var(--black);
+    color: var(--yellow);
+}
+nav a {
+    color: var(--black);
+}
+nav a:hover {
+    color: var(--red);
+}
+nav ul {
+    display: flex;
+    margin: 0;
+    padding: 20px 5px 5px 5px;
+    list-style-type: none;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+nav li {
+    font-weight: bold;
+    display: inline;
+    align-content: end;
+}
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 4fr 1fr;
+}
+article, figure, menu, dl {
+    max-width: 60vw;
+    max-height: 45vw;
+}
+article {
+    grid-row: 4;
+}
+
+img {
+    max-width: 100%;
+    padding: 10px 0 10px 0;
+}
+menu {
+    columns: 2;
+    grid-column: 1/2;
+    grid-row: 3;
+
+}
+div {
+    columns: 2;
+    grid-column: 1/2;
+    grid-row: 4;
+}
+figure {
+    border: 1px solid red;
+    border-radius: 10px;
+    background-color: lemonchiffon;
+}
+figure:last-of-type {
+    max-width: 30vw;
+    grid-column: 2;
+    grid-row: 3/4;
+}
+
+figcaption {
+    max-width: 50vw;
+}
+dl {
+    font-size: 1.5rem;
+}
+dl, dt {
+    color: var(--red);
+    font-weight: bold;
+}
+blockquote {
+    grid-column: 2;
+}
+blockquote, cite, dfn {
+    font-size: 1.2rem;
+}
+dfn {
+    grid-row: 1;
+    text-transform: uppercase;
+    font-style: normal;
+}
+section {
+    grid-column: 3/4;
+    border: 1px solid red;
+    border-radius: 10px;
+    background-color: lemonchiffon;
+}
+section dl, dt, dd {
+    grid-column: 2;
+    /* border-radius: 10px;
+    background-color: lemonchiffon; */
+}
+dd {
+    margin: 0.3em;
+}
+address {
+    text-align: center;
+    color: var(--ltgrey);
+    background-color: var(--black);
+}
+footer {
+    padding-top: 3px;
+}
