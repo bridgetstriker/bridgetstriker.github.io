@@ -130,11 +130,16 @@ section {
 }
 section dl, dt, dd {
     grid-column: 2;
-    /* border-radius: 10px;
-    background-color: lemonchiffon; */
+    border-radius: 10px;
+    background-color: lemonchiffon;
 }
 dd {
     margin: 0.3em;
+}
+blockquote {
+    padding-top: 30px;
+    max-height: 20px;
+    padding-bottom: auto;
 }
 address {
     text-align: center;
