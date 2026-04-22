@@ -70,9 +70,9 @@ article, figure, menu, dl {
     max-width: 60vw;
     max-height: 45vw;
 }
-article {
+/* article {
     grid-row: 4;
-}
+} */
 
 img {
     max-width: 100%;
